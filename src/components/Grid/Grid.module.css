@@ -1,0 +1,10 @@
+.grid {
+  height: 450px;
+  width: 450px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  border-radius: var(--border-radius);
+  background: linear-gradient(#32363a, #1f2325);
+}
