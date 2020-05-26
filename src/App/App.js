@@ -8,10 +8,12 @@ export default function App() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
   const [nextPlayer, setNextPlayer] = useState("");
+  const [winner, setWinner] = useState("");
 
   useEffect(() => {
+    setWinner(calculateWinner(squares));
     setNextPlayer(xIsNext ? "X" : "O");
-  }, [xIsNext]);
+  }, [xIsNext, squares]);
 
   const handleClick = (i) => {
     const squaresCopy = squares.slice();
@@ -20,7 +22,7 @@ export default function App() {
     setSquares(squaresCopy);
     setXIsNext(!xIsNext);
   };
-
+  const resetGame = () => {};
   return (
     <div className={styles.app}>
       <Welcome />
@@ -29,6 +31,8 @@ export default function App() {
         handleClick={handleClick}
         xIsNext={xIsNext}
         nextPlayer={nextPlayer}
+        winner={winner}
+        resetGame={resetGame}
       />
       <History />
       <GameOver />
