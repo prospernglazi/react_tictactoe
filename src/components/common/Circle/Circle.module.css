@@ -1,0 +1,19 @@
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: calc(var(--square-size) * 0.8);
+  height: calc(var(--square-size) * 0.8);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.circle:after {
+  position: absolute;
+  content: "";
+  width: calc(var(--square-size) * 0.5);
+  height: calc(var(--square-size) * 0.5);
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+}

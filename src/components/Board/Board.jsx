@@ -15,7 +15,6 @@ export default function Board({
       <Grid
         squares={squares}
         handleClick={handleClick}
-        xIsNext={xIsNext}
         nextPlayer={nextPlayer}
       />
       {winner && (

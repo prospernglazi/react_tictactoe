@@ -1,0 +1,28 @@
+.cross {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(var(--square-size) * 0.8);
+  height: calc(var(--square-size) * 0.8);
+}
+
+.cross:before {
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: calc(var(--square-size) * 0.15);
+  background-color: #fff;
+  border-radius: 20px;
+  transform: rotateZ(45deg);
+}
+
+.cross:after {
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: calc(var(--square-size) * 0.15);
+  background-color: #fff;
+  border-radius: 20px;
+  transform: rotateZ(-45deg);
+}

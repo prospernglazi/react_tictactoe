@@ -1,8 +1,21 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+}
+
 :root {
   --medium-grey: #53575c;
   --dark-grey: #17171ca8;
   --border-radius: 10px;
   --med-dark-gradient: linear-gradient(#3d4246, #24282b);
+  --square-size: 140px;
 }
 
 * {
@@ -13,4 +26,5 @@
   border: none;
   outline: none;
   font-family: "Poppins";
+  font-weight: 400;
 }

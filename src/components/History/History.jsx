@@ -6,9 +6,9 @@ export default function History() {
     <div className={styles.history}>
       <h2 className={styles.title}>HISTORY</h2>
       <div className={styles.logBoard}>
-        <button className={styles.logEntry}>Example Log 1</button>
-        <button className={styles.logEntry}>Example Log 2</button>
-        <button className={styles.logEntry}>Example Log 3</button>
+        <button className={styles.logEntry}>History 1</button>
+        <button className={styles.logEntry}>History 2</button>
+        <button className={styles.logEntry}>History 3</button>
       </div>
     </div>
   );

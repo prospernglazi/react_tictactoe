@@ -1,18 +1,20 @@
 .history {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 200px;
   height: 480px;
   background: var(--med-dark-gradient);
-  box-shadow: 5px 5px 10px var(--outer-shadow);
   border-radius: var(--border-radius);
-  padding: 10px;
+  /* padding: 5px 10px; */
 }
 
 .title {
   color: #fff;
   font-family: "Poppins";
+  font-weight: 700;
+  /* margin-bottom: 5px; */
 }
 
 .logBoard {
@@ -21,7 +23,8 @@
   grid-template-columns: repeat(3, minmax(150px, 1fr));
   border-radius: var(--border-radius);
   background: linear-gradient(#32363a, #1f2325);
-  padding: 10px;
+  padding: 5px;
+  /* border: 2px solid wheat; */
 }
 
 .logEntry {
