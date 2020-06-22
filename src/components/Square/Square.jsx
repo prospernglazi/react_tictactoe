@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Square.module.css";
 
-export default function Square({ value, handleClick, nextPlayer }) {
+export default function Square({ value, handleClick, currentPlayer }) {
   const [flip, setFlip] = useState(false);
   const onClick = () => {
     setFlip(true);
@@ -16,7 +16,7 @@ export default function Square({ value, handleClick, nextPlayer }) {
         <div className={styles.front}></div>
         <div className={styles.back}>{value}</div>
       </button>
-      <div className={styles.nextIndicator}>{!flip && nextPlayer}</div>
+      <div className={styles.nextIndicator}>{!flip && currentPlayer}</div>
     </div>
   ); 
 }

@@ -1,0 +1,25 @@
+.overlay {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  border-radius: var(--border-radius);
+
+}
+
+button, label {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--dark-grey);
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 3rem;
+}

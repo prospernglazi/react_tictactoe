@@ -3,15 +3,15 @@ import styles from "./Grid.module.css";
 
 import Square from "../Square/Square.jsx";
 
-export default function Grid({ squares, handleClick, nextPlayer }) {
+export default function Grid({ squares, handleClick, currentPlayer }) {
   return (
     <ul className={styles.grid}>
-      {squares.map((square, i) => (
+      {squares.map((_, i) => (
         <Square
           key={i}
           className={styles.square}
           value={squares[i]}
-          nextPlayer={nextPlayer}
+          currentPlayer={currentPlayer}
           handleClick={() => handleClick(i)}
         />
       ))}

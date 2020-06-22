@@ -1,3 +1,49 @@
 .welcome {
-  display: none;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.welcome h1 {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+form {
+  width: 100%;
+}
+
+.playerSelect {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.playerSelect input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.playerSelect label {
+  width: 25%;
+  margin: 20px 0;
+}
+
+.startButton {
+  width: 50%;
+}
+
+.startButton:hover {
+  box-shadow: 0 0 0 2px #4caf50 inset;
+  color: #4caf50;
 }
